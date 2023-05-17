@@ -16,16 +16,20 @@ function addRecipe(array){
 
     recipeCard.class = 'recipes'
     recipeTitle.textContent = recipeInfo.meal
-    const recipeList = recipeInfo.mainIngredients
-    const recipeInstructions = recipeInfo.instructions
+
+    
     const ingredientList = document.createElement('ul')
     const instructionList = document.createElement('ol')
 
+    const recipeList = recipeInfo.mainIngredients
+    const recipeInstructions = recipeInfo.instructions
+    
     recipeInstructions.forEach(instructions => {
         const li = document.createElement('li')
         li.textContent = instructions
-        instructionList.append(li)
-    })
+        instructionList.append(li)    
+     })
+    
 
     recipeList.forEach(ingredients => {
         const li = document.createElement('li')
@@ -49,6 +53,8 @@ function fetchRecipeList(){
         addRecipe(json)
     })
 }
+
+
 
 /** document.addEventListener('DOMContentLoaded', function(){
     const recipe = document.getElementById("recipe");
