@@ -1,8 +1,11 @@
 console.log("javascript file connected");
 
-document.getElementById('recipe').addEventListener('submit', (e) => {
-    e.preventDefault()
-    fetchRecipeList()
+const recipeSearch = document.getElementById('recipe')
+
+recipeSearch.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetchRecipeList();
+    recipeSearch.reset();
     }
 )
 
@@ -54,7 +57,6 @@ function fetchRecipeList(){
 }
 
 
-
 const recipeToAdd = document.getElementById("enterRec");
     recipeToAdd.addEventListener("submit", (event) => { 
     event.preventDefault();
@@ -62,10 +64,9 @@ const recipeToAdd = document.getElementById("enterRec");
         meal: event.target.recipe.value,
         credit: event.target.website.value,
     }
-    newRecipe(newAddRecipe)
-    })
-
-
+    newRecipe(newAddRecipe);
+    recipeToAdd.reset();
+})
 
 
 
