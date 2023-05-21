@@ -126,14 +126,26 @@
       "recipeImage": "./assets/pancakes.jpg"
     },
     {
+      "id": 3,
       "meal": "Chicken Noodle Soup",
+      "mainIngredients": [""],
+      "alternateIngredients": [""],
+      "instructions":[""],
+      "alternateInstructions":[""],
+      "tips":[""],
       "credit": "https://tastesbetterfromscratch.com/chicken-noodle-soup/",
-      "id": 3
+      "recipeImage":""
     },
     {
+      "id": 4,
       "meal": "Beef Chili",
+      "mainIngredients":[""],
+      "alternateIngredients":[""],
+      "instructions":[""],
+      "alternateInstructions":[""],
       "credit": "https://www.thewholesomedish.com/the-best-classic-chili/",
-      "id": 4
+      "recipeImage":""
     }
+  
   ]
 }

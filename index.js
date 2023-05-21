@@ -1,6 +1,8 @@
 console.log("javascript file connected");
 
-const recipeSearch = document.getElementById('recipe')
+const recipeSearch = document.getElementById('recipe');
+const recipeSection = document.getElementById('recipeContainer');
+const whatRecipe = search.value;
 
 recipeSearch.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -9,8 +11,14 @@ recipeSearch.addEventListener('submit', (e) => {
     }
 )
 
+
+/**function recipeError(){
+    const error = document.createElement('p');
+    error.textContent = "Sorry! This recipe is not in the database yet."
+    recipeSection.appendChild(error)
+}**/
+
 function addRecipe(array){
-   const recipeSection = document.getElementById('recipeContainer')
    array.forEach(recipeInfo => {
      const recipeCard = document.createElement('div')
      const recipeTitle = document.createElement('h2')
@@ -52,7 +60,7 @@ function fetchRecipeList(){
     .then(resp => resp.json())
     .then(json => {
         console.log(json);
-        addRecipe(json)
+        addRecipe(json);
     })
 }
 
@@ -67,7 +75,6 @@ const recipeToAdd = document.getElementById("enterRec");
     newRecipe(newAddRecipe);
     recipeToAdd.reset();
 })
-
 
 
 
