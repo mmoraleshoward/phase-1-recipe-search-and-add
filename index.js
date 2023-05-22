@@ -17,6 +17,7 @@ recipeSearch.addEventListener('submit', (e) => {
           }
           
         fetchRecipeList()
+        recipeSearch.reset()
 
         })
 
