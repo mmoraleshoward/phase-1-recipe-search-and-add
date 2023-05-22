@@ -1,16 +1,50 @@
 body {
     background-color: rgb(233, 225, 232);
     font-family: 'Garamond';
-    color: rgb(84, 66, 128);  
+    color: rgb(84, 66, 128);
+    font-size: 30px;  
 };
 
 h1 {
     color: #d54d7b; 
-    font-family: "Great Vibes", cursive; 
-    font-size: 165px; line-height: 160px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 160px;
     font-weight: normal; 
     margin-bottom: 0px; 
     margin-top: 40px; 
-    text-align: center; 
     text-shadow: 0 1px 1px #fff;
 }
+
+.recipeButton {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Courier New;
+    color: #8c088c;
+    font-size: 23px;
+    background: #f2faff;
+    padding: 10px 20px 10px 20px;
+    border: solid #164c6e 2px;
+    text-decoration: none;
+  }
+  
+  .recipeButton:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
+
+  .search {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Courier New;
+    color: #8c088c;
+    font-size: 23px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #164c6e 2px;
+    text-decoration: none;
+  }
+
+
+  
