@@ -143,30 +143,54 @@
         "3 cups rotisserie chicken*",
         "1 teaspoon Better than Bouillon chicken base (or more, as needed) , or chicken bouillon granules"
       ],
-      "alternateIngredients": [""],
-      "instructions":[
-        "Add butter, diced celery and carrots to a large stock pot over medium-high heat. Saute for 3 minutes. Add garlic and cook for another 30 seconds.", 
+      "alternateIngredients": [
+        ""
+      ],
+      "instructions": [
+        "Add butter, diced celery and carrots to a large stock pot over medium-high heat. Saute for 3 minutes. Add garlic and cook for another 30 seconds.",
         "Add chicken stock and season the broth with rosemary, sage, crushed red pepper, and salt (definitely TASTE the broth before adding more salt), and pepper. Taste and add a spoonful of “better than bullion” chicken or chicken bouillon cubes or granules as needed.",
-        "Bring broth to a boil. Add noodles (either uncooked homemade egg noodles, or dry store-bought pasta) and cook just until noodles are al dente.", 
-        "If using store-bought noodles, be cautious not to overcook them! Remove pot from heat as soon as they are just barely tender. The noodles will continue to cook once you remove the pot from the heat, and you don't want them mushy.", 
+        "Bring broth to a boil. Add noodles (either uncooked homemade egg noodles, or dry store-bought pasta) and cook just until noodles are al dente.",
+        "If using store-bought noodles, be cautious not to overcook them! Remove pot from heat as soon as they are just barely tender. The noodles will continue to cook once you remove the pot from the heat, and you don't want them mushy.",
         "Add chicken meat from the rotisserie chicken. Taste the broth again and add more seasonings, if needed.",
         "Store leftovers in an airtight container in the refrigerator for 4-5 days, depending on the freshness of the chicken you used."
-        ],
-      "alternateInstructions":[""],
-      "tips":[""],
+      ],
+      "alternateInstructions": [
+        ""
+      ],
+      "tips": [
+        ""
+      ],
       "credit": "https://tastesbetterfromscratch.com/chicken-noodle-soup/",
-      "recipeImage":"./assets/chickennoodle.jpg"
+      "recipeImage": "./assets/chickennoodle.jpg"
     },
     {
       "id": 4,
       "meal": "Beef Chili",
-      "mainIngredients":[""],
-      "alternateIngredients":[""],
-      "instructions":[""],
-      "alternateInstructions":[""],
+      "mainIngredients": [
+        ""
+      ],
+      "alternateIngredients": [
+        ""
+      ],
+      "instructions": [
+        ""
+      ],
+      "alternateInstructions": [
+        ""
+      ],
       "credit": "https://www.thewholesomedish.com/the-best-classic-chili/",
-      "recipeImage":""
+      "recipeImage": "./assets/classicchilli.jpg"
+    },
+    {
+      "id": 5,
+      "meal": "Best Hamburger",
+      "mainIngredients": "",
+      "alternateIngredients": "",
+      "instructions": "",
+      "alternateInstructions": "",
+      "tips": "",
+      "credit": "https://www.allrecipes.com/recipe/72657/best-hamburger-ever/",
+      "recipeImage": ""
     }
-  
   ]
 }

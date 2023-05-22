@@ -2,21 +2,29 @@ console.log("javascript file connected");
 
 const recipeSearch = document.getElementById('recipe');
 const recipeSection = document.getElementById('recipeContainer');
-const whatRecipe = search.value;
+
+document.getElementById('clickMe').addEventListener('click', () => {
+    alert('Page is a Work In Progress, But Feel Free to Add Recipes :)')
+})
 
 recipeSearch.addEventListener('submit', (e) => {
     e.preventDefault();
-    fetchRecipeList();
-    recipeSearch.reset();
-    }
-)
+    function fetchRecipeList(){
+        fetch('http://localhost:3000/Recipes')
+          .then(resp => resp.json())
+          .then(json => {
+            addRecipe(json)})
+          }
+          
+        fetchRecipeList()
+
+        })
 
 
-/**function recipeError(){
-    const error = document.createElement('p');
-    error.textContent = "Sorry! This recipe is not in the database yet."
-    recipeSection.appendChild(error)
-}**/
+
+    
+
+
 
 function addRecipe(array){
    array.forEach(recipeInfo => {
@@ -52,17 +60,18 @@ function addRecipe(array){
     recipeCard.append(recipeImg, recipeTitle, ingredientList, instructionList)
 
     recipeSection.append(recipeCard)
+
    })
 }
 
-function fetchRecipeList(){
+/**function fetchRecipeList(){
   fetch('http://localhost:3000/Recipes')
     .then(resp => resp.json())
     .then(json => {
         console.log(json);
         addRecipe(json);
     })
-}
+}**/
 
 
 const recipeToAdd = document.getElementById("enterRec");
@@ -70,7 +79,13 @@ const recipeToAdd = document.getElementById("enterRec");
     event.preventDefault();
     let newAddRecipe = {
         meal: event.target.recipe.value,
+        mainIngredients: "",
+        alternateIngredients: "",
+        instructions: "",
+        alternateInstructions: "",
+        tips: "",
         credit: event.target.website.value,
+        recipeImage: ""
     }
     newRecipe(newAddRecipe);
     recipeToAdd.reset();
